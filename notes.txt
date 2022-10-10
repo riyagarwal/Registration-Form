@@ -1,0 +1,38 @@
+
+ class="display-4" used is bootstrap class
+ The button attibute type = "submit" resets the data as soon as the button is pressed.
+ To restore the data even after submitting, change the type value to button, i.e. type = "button"
+
+ input id = label for
+ This is to link the label with the input tag
+
+ The script tag can be put either in the head tag or at the end of the body tag.
+
+ document.getelementbysomething.value is used ot fetch the value fromm input field
+ document.getelementbysomething.innertext is used to fetch text of a paragraph, etc
+ document.getelementbysomething.innerHTML is used to fetch the html content of an element
+
+ to ask - autocomplete not working
+
+ .value does not work for type = checkbox
+
+ Front end and Back end interact with each other with the help of APIs.
+
+ Changing CSS using JavaScript:- style.property
+
+ includes() method returns true if the string contains the character/string else false.
+ Also, it is case-sensitive to the input given
+
+ indexOf() method returns index of a character or substring in the string.
+ It returns index of 1st occurrence of substring or char.
+
+ isNaN() - returns true if value is not a number(NaN, letters, chars)
+         - returns false if value is a number
+
+NaN when compared with NaN returns false
+NaN == NaN false
+NaN === NaN false
+
+getElementsByClassName() returns an array unlike getElementById
+
+ 
