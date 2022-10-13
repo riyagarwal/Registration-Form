@@ -109,13 +109,6 @@ else{
 
 if(!error) {
   // Resetting values
-  /* document.getElementById("first-name").value = '';
-  document.getElementById("last-name").value = '';
-  document.getElementById("city").value = '';
-  document.getElementById("email").value = '';
-  document.getElementById("state").value = '';
-  document.getElementById("zip").value = '';
-  document.getElementById("t-and-c").checked = false;   */
 
   document.getElementById("registration-form").reset()
 

@@ -25,7 +25,7 @@
           class="form-control"
           id="first-name"
           required
-          autocomplete="off"
+          autocomplete="off" onkeyup="validate()"
         />
         <div class="valid-feedback" id="first-name-valid">Looks good!</div>
         <div class="invalid-feedback" id="first-name-invalid">
@@ -41,7 +41,7 @@
           class="form-control"
           id="last-name"
           required
-          autocomplete="off"
+          autocomplete="off" onkeyup="validate()"
         />
         <div class="valid-feedback" id="last-name-valid">Looks good!</div>
         <div class="invalid-feedback" id="last-name-invalid">
@@ -60,7 +60,7 @@
             id="email"
             aria-describedby="inputGroupPrepend"
             required
-            autocomplete="off"
+            autocomplete="off" onkeyup="validate()"
           />
           <div class="valid-feedback" id="email-valid">Looks good!</div>
           <div class="invalid-feedback" id="email-invalid">
@@ -77,7 +77,7 @@
           class="form-control"
           id="city"
           required
-          autocomplete="off"
+          autocomplete="off" onkeyup="validate()"
         />
         <div class="valid-feedback" id="city-valid">Looks good!</div>
         <div class="invalid-feedback" id="city-invalid">
@@ -88,8 +88,8 @@
       <!-- state -->
       <div class="col-md-3">
         <label for="state" class="form-label">State</label>
-        <select class="form-select" id="state" required>
-          <option selected disabled value="none">Choose...</option>
+        <select class="form-select" id="state" required onclick="validate()">
+          <option selected value="none">Choose...</option>
           <option value="Andhra Pradesh">Andhra Pradesh</option>
           <option value="Andaman and Nicobar Islands">
             Andaman and Nicobar Islands
@@ -143,7 +143,7 @@
           class="form-control"
           id="zip"
           required
-          autocomplete="off"
+          autocomplete="off" onkeyup="validate()"
         />
         <div class="valid-feedback" id="zip-valid">Looks good!</div>
         <div class="invalid-feedback" id="zip-invalid">
@@ -159,7 +159,7 @@
             type="checkbox"
             value=""
             id="t-and-c"
-            required
+            required onkeyup="validate()"
           />
           <label class="form-check-label" for="t-and-c">
             Agree to terms and conditions
@@ -170,7 +170,7 @@
 
       <!-- button -->
       <div class="col-12" style="text-align: center">
-        <button class="btn btn-dark" type="button" onclick="validate()">
+        <button class="btn" type="button" onclick="validate(true)">
           Submit form
         </button>
       </div>
